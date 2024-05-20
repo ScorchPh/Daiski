@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <Title>NUMBER SYSTEM CONVERTER DAMMIT!!!</Title>
+</head>
+<body>
+    <header>
+        <h1>NUMBER SYSTEM CONVERTER</h1>
+        <h2>(UwU)</h2>
+    </header>
+    <main>
+      
+    <h2>Number System Converter</h2>
+    <label for="numberInput" >Enter Number:</label>
+    <input type="text" id="numberInput" placeholder="Enter a number" oninput="checkNumber()">
+    &nbsp; &nbsp;  
+    <br><br>
+
+     <label for="fromBase">From Base:</label>
+    <select id="fromBase" onchange="eraseNum()">
+        <option value="1" selected disabled >CHOOSE</option>
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="10">Decimal</option>
+        <option value="16">Hexadecimal</option>
+    </select>
+    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+    <label for="toBase">To Base:</label>
+    <select id="toBase">
+        <option value="1" selected disabled>CHOOSE</option>
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="10">Decimal</option>
+        <option value="16">Hexadecimal</option>
+    </select>
+    
+    <br><br>
+    <button onclick="convertNumber()">Convert</button>
+    <p >Resultaa:</p>
+    <h1 id="result"></h1>
+
+    <script src="main.js">
+    </script>
+    </main>
+    <footer>
+    All rights reserved 3000 &copy;
+    Creators :
+    <ul>
+        <li>Jon Daniel Cabansay</li>
+        <li>John Vincent Ong</li>
+        <li>John Ronvie Pahugot</li>
+    </ul>
+</footer>
+</body>
+</html>
